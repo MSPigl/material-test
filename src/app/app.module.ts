@@ -10,13 +10,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PostDialogComponent } from './post-dialog/post-dialog.component';
 import {FormsModule} from '@angular/forms';
+import { FlexLayoutComponent } from './flex-layout/flex-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     DashboardComponent,
-    PostDialogComponent
+    PostDialogComponent,
+    FlexLayoutComponent
   ],
   imports: [
     BrowserModule,
