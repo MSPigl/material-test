@@ -1,5 +1,7 @@
 # MaterialTest
 
+Project based on the [Auth0 Angular Material tutorial](https://auth0.com/blog/creating-beautiful-apps-with-angular-material/) with some small tweaks and without authorization.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
 ## Development server
