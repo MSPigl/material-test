@@ -36,8 +36,11 @@ export class PostsDataService {
     this.ELEMENT_DATA.push(data);
   }
 
-  deletePost(index): void {
-    this.ELEMENT_DATA = [...this.ELEMENT_DATA.slice(0, index), ...this.ELEMENT_DATA.slice(index + 1)];
+  deletePost(index: number): void {
+    this.ELEMENT_DATA.splice(index, 1);
+    for (let i = 0; i < this.dataLength(); i++) {
+      this.ELEMENT_DATA[i].position = i;
+    }
   }
 
   dataLength(): number {

@@ -15,6 +15,11 @@ export class DashboardComponent {
 
   displayedColumns = ['date_posted', 'title', 'category', 'delete'];
   dataSource = new PostDataSource(this.dataService);
+
+  deletePost(index: number): void {
+    this.dataService.deletePost(index);
+    this.dataSource = new PostDataSource(this.dataService);
+  }
 }
 
 export class PostDataSource extends DataSource<any> {

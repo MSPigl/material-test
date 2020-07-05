@@ -35,8 +35,7 @@
                 <ng-container matColumnDef="delete">
                   <mat-header-cell *matHeaderCellDef></mat-header-cell>
                   <mat-cell *matCellDef="let element">
-                    <a
-                      type="button">
+                    <a type="button" (click)="deletePost(element.position)">
                       <mat-icon class="icon">delete</mat-icon>
                     </a>
                   </mat-cell>
