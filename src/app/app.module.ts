@@ -8,12 +8,15 @@ import {MaterialModule} from './material/material.module';
 import {FlexLayoutModule, FlexModule} from '@angular/flex-layout';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PostDialogComponent } from './post-dialog/post-dialog.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    PostDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MaterialModule,
     HammerModule,
     FlexModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
